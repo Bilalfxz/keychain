@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrochetByRook - Handmade Woolen Treasures</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen (will be added dynamically by JavaScript) -->
+    <!-- The loading screen HTML is created dynamically in script.js -->
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <p><i class="fas fa-heart"></i> Handmade with love, delivered with care</p>
+                <div class="header-actions">
+                    <a href="https://wa.me/yourphonenumber" target="_blank" class="social-icon whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://instagram.com/yourusername" target="_blank" class="social-icon instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header-main">
+            <div class="container">
+                <div class="logo">
+                    <h1><i class="fas fa-yarn"></i> CrochetByRook</h1>
+                    <p class="tagline">Handmade Woolen Treasures</p>
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#collections">Collections</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Banner -->
+        <section class="hero-banner" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Cozy Handmade Crochet</h2>
+                    <p>Discover unique, handmade crochet keychains, sweaters, and accessories crafted with love and premium wool</p>
+                    <a href="#products" class="btn">Shop Now</a>
+                </div>
+                <div class="hero-image">
+                    <div class="yarn-ball"></div>
+                    <div class="crochet-hook"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="featured-section">
+            <div class="container">
+                <div class="featured-item" style="background-color: #f9e9f0;">
+                    <i class="fas fa-key"></i>
+                    <h3>Keychains</h3>
+                    <p>Adorable handmade keychains</p>
+                </div>
+                <div class="featured-item" style="background-color: #e9f5f9;">
+                    <i class="fas fa-tshirt"></i>
+                    <h3>Sweaters</h3>
+                    <p>Cozy woolen sweaters</p>
+                </div>
+                <div class="featured-item" style="background-color: #f0f9e9;">
+                    <i class="fas fa-mitten"></i>
+                    <h3>Accessories</h3>
+                    <p>Winter accessories</p>
+                </div>
+                <div class="featured-item" style="background-color: #f9f2e9;">
+                    <i class="fas fa-gift"></i>
+                    <h3>Custom Orders</h3>
+                    <p>Personalized creations</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="products-section" id="products">
+            <div class="container">
+                <h2 class="section-title">Our Handmade Collection</h2>
+                <p class="section-subtitle">Each piece is uniquely crafted with care and premium materials</p>
+                
+                <!-- Keychains Collection -->
+                <div class="product-category">
+                    <h3 class="category-title"><i class="fas fa-key"></i> Crochet Keychains</h3>
+                    <div class="products-grid">
+                        <!-- Product 1 -->
+                        <div class="product-card">
+                            <div class="product-image" style="background-color: #f8d7e6;">
+                                <div class="image-placeholder">🐰</div>
+                            </div>
+                            <div class="product-header">
+                                <h4>Bunny Keychain</h4>
+                                <p class="description">Soft white bunny with pink ears</p>
+                            </div>
+                            <div class="product-pricing">
+                                <div class="price">Rs. 199</div>
+                                <div class="material">100% Acrylic Wool</div>
+                            </div>
+                            <button class="buy-now-btn" data-product="Bunny Keychain" data-price="199">
+                                <i class="fab fa-instagram"></i> Buy on Instagram
+                            </button>
+                        </div>
+
+                        <!-- Product 2 -->
+                        <div class="product-card">
+                            <div class="product-image" style="background-color: #d7e6f8;">
+                                <div class="image-placeholder">🐻</div>
+                            </div>
+                            <div class="product-header">
+                                <h4>Bear Keychain</h4>
+                                <p class="description">Brown teddy bear with ribbon</p>
+                            </div>
+                            <div class="product-pricing">
+                                <div class="price">Rs. 199</div>
+                                <div class="material">Premium Acrylic Yarn</div>
+                            </div>
+                            <button class="buy-now-btn" data-product="Bear Keychain" data-price="199">
+                                <i class="fab fa-instagram"></i> Buy on Instagram
+                            </button>
+                        </div>
+
+                        <!-- Product 3 -->
+                        <div class="product-card">
+                            <div class="product-image" style="background-color: #e6f8d7;">
+                                <div class="image-placeholder">🌸</div>
+                            </div>
+                            <div class="product-header">
+                                <h4>Flower Keychain</h4>
+                                <p class="description">Colorful flower with leaves</p>
+                            </div>
+                            <div class="product-pricing">
+                                <div class="price">Rs. 179</div>
+                                <div class="material">Soft Cotton Blend</div>
+                            </div>
+                            <button class="buy-now-btn" data-product="Flower Keychain" data-price="179">
+                                <i class="fab fa-instagram"></i> Buy on Instagram
+                            </button>
+                        </div>
+
+                        <!-- Product 4 -->
+                        <div class="product-card">
+                            <div class="product-image" style="background-color: #f8f2d7;">
+                                <div class="image-placeholder">⭐</div>
+                            </div>
+                            <div class="product-header">
+                                <h4>Star Keychain</h4>
+                                <p class="description">Golden star with glitter thread</p>
+                            </div>
+                            <div class="product-pricing">
+                                <div class="price">Rs. 189</div>
+                                <div class="material">Metallic Blend Yarn</div>
+                            </div>
+                            <button class="buy-now-btn" data-product="Star Keychain" data-price="189">
+                                <i class="fab fa-instagram"></i> Buy on Instagram
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sweaters Collection -->
+                <div class="product-category">
+                    <h3 class="category-title"><i class="fas fa-tshirt"></i> Handmade Sweaters</h3>
+                    <div class="products-grid">
+                        <!-- Product 1 -->
+                        <div class="product-card">
+                            <div class="product-image" style="background-color: #f0e6ff;">
+                                <div class="image-placeholder">🧥</div>
+                            </div>
+                            <div class="product-header">
+                                <h4>Cloud Sweater</h4>
+                                <p class="description">Oversized comfy cloud pattern</p>
+                            </div>
+                            <div class="product-pricing">
+                                <div class="price">Rs. 1,299</div>
+                                <div class="material">Premium Merino Wool</div>
+                            </div>
+                            <button class="buy-now-btn" data-product="Cloud Sweater" data-price="1299">
+                                <i class="fab fa-instagram"></i> Buy on Instagram
+                            </button>
+                        </div>
+
+                        <!-- Product 2 -->
+                        <div class="product-card">
+                            <div class="product-image" style="background-color: #ffe6f0;">
+                                <div class="image-placeholder">🧶</div>
+                            </div>
+                            <div class="product-header">
+                                <h4>Pastel Cardigan</h4>
+                                <p class="description">Light pink cardigan with buttons</p>
+                            </div>
+                            <div class="product-pricing">
+                                <div class="price">Rs. 1,499</div>
+                                <div class="material">Baby Alpaca Blend</div>
+                            </div>
+                            <button class="buy-now-btn" data-product="Pastel Cardigan" data-price="1499">
+                                <i class="fab fa-instagram"></i> Buy on Instagram
+                            </button>
+                        </div>
+
+                        <!-- Product 3 -->
+                        <div class="product-card">
+                            <div class="product-image" style="background-color: #e6fff0;">
+                                <div class="image-placeholder">🐑</div>
+                            </div>
+                            <div class="product-header">
+                                <h4>Sheep Sweater</h4>
+                                <p class="description">White sweater with sheep design</p>
+                            </div>
+                            <div class="product-pricing">
+                                <div class="price">Rs. 1,399</div>
+                                <div class="material">Organic Cotton Wool</div>
+                            </div>
+                            <button class="buy-now-btn" data-product="Sheep Sweater" data-price="1399">
+                                <i class="fab fa-instagram"></i> Buy on Instagram
+                            </button>
+                        </div>
+
+                        <!-- Product 4 -->
+                        <div class="product-card">
+                            <div class="product-image" style="background-color: #fff0e6;">
+                                <div class="image-placeholder">❄️</div>
+                            </div>
+                            <div class="product-header">
+                                <h4>Snowflake Pullover</h4>
+                                <p class="description">Blue winter-themed pullover</p>
+                            </div>
+                            <div class="product-pricing">
+                                <div class="price">Rs. 1,599</div>
+                                <div class="material">Warm Chenille Yarn</div>
+                            </div>
+                            <button class="buy-now-btn" data-product="Snowflake Pullover" data-price="1599">
+                                <i class="fab fa-instagram"></i> Buy on Instagram
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accessories Collection -->
+                <div class="product-category">
+                    <h3 class="category-title"><i class="fas fa-mitten"></i> Winter Accessories</h3>
+                    <div class="products-grid">
+                        <!-- Product 1 -->
+                        <div class="product-card">
+                            <div class="product-image" style="background-color: #f8e6ff;">
+                                <div class="image-placeholder">🧣</div>
+                            </div>
+                            <div class="product-header">
+                                <h4>Rainbow Scarf</h4>
+                                <p class="description">Colorful striped winter scarf</p>
+                            </div>
+                            <div class="product-pricing">
+                                <div class="price">Rs. 699</div>
+                                <div class="material">Soft Acrylic Blend</div>
+                            </div>
+                            <button class="buy-now-btn" data-product="Rainbow Scarf" data-price="699">
+                                <i class="fab fa-instagram"></i> Buy on Instagram
+                            </button>
+                        </div>
+
+                        <!-- Product 2 -->
+                        <div class="product-card">
+                            <div class="product-image" style="background-color: #e6fffc;">
+                                <div class="image-placeholder">🎩</div>
+                            </div>
+                            <div class="product-header">
+                                <h4>Pom Pom Beanie</h4>
+                                <p class="description">Warm beanie with big pom pom</p>
+                            </div>
+                            <div class="product-pricing">
+                                <div class="price">Rs. 499</div>
+                                <div class="material">Wool Blend</div>
+                            </div>
+                            <button class="buy-now-btn" data-product="Pom Pom Beanie" data-price="499">
+                                <i class="fab fa-instagram"></i> Buy on Instagram
+                            </button>
+                        </div>
+
+                        <!-- Product 3 -->
+                        <div class="product-card">
+                            <div class="product-image" style="background-color: #fffce6;">
+                                <div class="image-placeholder">🧤</div>
+                            </div>
+                            <div class="product-header">
+                                <h4>Mittens Set</h4>
+                                <p class="description">Matching mittens with cable pattern</p>
+                            </div>
+                            <div class="product-pricing">
+                                <div class="price">Rs. 599</div>
+                                <div class="material">Double-knit Wool</div>
+                            </div>
+                            <button class="buy-now-btn" data-product="Mittens Set" data-price="599">
+                                <i class="fab fa-instagram"></i> Buy on Instagram
+                            </button>
+                        </div>
+
+                        <!-- Product 4 -->
+                        <div class="product-card">
+                            <div class="product-image" style="background-color: #fce6ff;">
+                                <div class="image-placeholder">👜</div>
+                            </div>
+                            <div class="product-header">
+                                <h4>Tote Bag</h4>
+                                <p class="description">Colorful crochet tote bag</p>
+                            </div>
+                            <div class="product-pricing">
+                                <div class="price">Rs. 799</div>
+                                <div class="material">Reinforced Cotton</div>
+                            </div>
+                            <button class="buy-now-btn" data-product="Crochet Tote Bag" data-price="799">
+                                <i class="fab fa-instagram"></i> Buy on Instagram
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Collections Section -->
+        <section class="collections-section" id="collections">
+            <div class="container">
+                <h2 class="section-title">Special Collections</h2>
+                
+                <div class="collections-grid">
+                    <!-- Collection 1 -->
+                    <div class="collection-card" style="background: linear-gradient(135deg, #f9e9f0, #f0d9e6);">
+                        <div class="collection-content">
+                            <h3><i class="fas fa-heart"></i> Valentine's Special</h3>
+                            <p>Heart-shaped keychains and red-themed accessories</p>
+                            <a href="https://instagram.com/yourusername" target="_blank" class="collection-btn">
+                                View Collection
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Collection 2 -->
+                    <div class="collection-card" style="background: linear-gradient(135deg, #e9f5f9, #d9e6f0);">
+                        <div class="collection-content">
+                            <h3><i class="fas fa-snowflake"></i> Winter Warmers</h3>
+                            <p>Cozy sweaters, scarves, and mittens for winter</p>
+                            <a href="https://instagram.com/yourusername" target="_blank" class="collection-btn">
+                                View Collection
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Collection 3 -->
+                    <div class="collection-card" style="background: linear-gradient(135deg, #f0f9e9, #e6f0d9);">
+                        <div class="collection-content">
+                            <h3><i class="fas fa-birthday-cake"></i> Birthday Special</h3>
+                            <p>Customized gifts and cake-themed creations</p>
+                            <a href="https://instagram.com/yourusername" target="_blank" class="collection-btn">
+                                View Collection
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Collection 4 -->
+                    <div class="collection-card" style="background: linear-gradient(135deg, #f9f2e9, #f0e6d9);">
+                        <div class="collection-content">
+                            <h3><i class="fas fa-gift"></i> Gift Packs</h3>
+                            <p>Ready-to-gift bundles for special occasions</p>
+                            <a href="https://instagram.com/yourusername" target="_blank" class="collection-btn">
+                                View Collection
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section" id="testimonials">
+            <div class="container">
+                <h2 class="section-title">What Our Customers Say</h2>
+                
+                <div class="testimonials-grid">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="customer-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="customer-info">
+                                <h4>Priya Sharma</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"The bunny keychain is adorable! Perfect quality and so soft. Ordered through Instagram DM and received it in 3 days. Will definitely order more!"</p>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="customer-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="customer-info">
+                                <h4>Rohan Patel</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Ordered a custom sweater for my wife's birthday. The communication on WhatsApp was excellent, and the final product exceeded expectations!"</p>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="customer-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="customer-info">
+                                <h4>Ananya Reddy</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Love my rainbow scarf! The colors are exactly as shown online. The ordering process through Instagram was smooth and hassle-free."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 class="section-title">About CrochetByRook</h2>
+                        <p>Hi! I'm Rook, the creator behind CrochetByRook. What started as a hobby during the pandemic has turned into a passion for creating beautiful, handmade crochet items.</p>
+                        <p>Each piece is crafted with love, attention to detail, and high-quality materials. I believe in creating products that bring joy and warmth to your everyday life.</p>
+                        <div class="features-list">
+                            <div class="feature-item">
+                                <i class="fas fa-hand-sparkles"></i>
+                                <span>100% Handmade</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-feather-alt"></i>
+                                <span>Premium Materials</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-shipping-fast"></i>
+                                <span>Fast Delivery</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-heart"></i>
+                                <span>Made with Love</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-placeholder-large">
+                            <i class="fas fa-yarn"></i>
+                            <p>Handcrafted with Care</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How to Order -->
+        <section class="order-steps">
+            <div class="container">
+                <h2 class="section-title">How to Order</h2>
+                <div class="steps-grid">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <i class="fab fa-instagram"></i>
+                        <h3>Browse & Select</h3>
+                        <p>Choose your favorite products from our Instagram page or website</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <i class="fab fa-whatsapp"></i>
+                        <h3>Contact via DM</h3>
+                        <p>Send us a DM on Instagram or WhatsApp with the product name</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <i class="fas fa-shipping-fast"></i>
+                        <h3>Confirm & Pay</h3>
+                        <p>Confirm details and make payment via UPI or bank transfer</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <i class="fas fa-gift"></i>
+                        <h3>Receive Your Order</h3>
+                        <p>Get your handmade treasure delivered to your doorstep</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Order via Social Media</h3>
+                        <p>We're most active on Instagram and WhatsApp. Feel free to reach out for orders, custom requests, or just to say hello!</p>
+                        
+                        <div class="contact-methods">
+                            <a href="https://instagram.com/yourusername" target="_blank" class="contact-btn instagram">
+                                <i class="fab fa-instagram"></i> @crochetbyrook
+                            </a>
+                            <a href="https://wa.me/yourphonenumber" target="_blank" class="contact-btn whatsapp">
+                                <i class="fab fa-whatsapp"></i> +91 98765 43210
+                            </a>
+                            <a href="mailto:crochetbyrook@gmail.com" class="contact-btn email">
+                                <i class="fas fa-envelope"></i> crochetbyrook@gmail.com
+                            </a>
+                        </div>
+                        
+                        <div class="shipping-info">
+                            <h4><i class="fas fa-shipping-fast"></i> Shipping Information</h4>
+                            <ul>
+                                <li>All India Delivery</li>
+                                <li>2-3 Days Processing Time</li>
+                                <li>3-5 Days Delivery Time</li>
+                                <li>Free Shipping on orders above Rs. 999</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+    <h3>Quick Enquiry</h3>
+    
+    <form action="https://formspree.io/f/xdadrejo" method="POST">
+        <input type="hidden" name="_subject" value="New enquiry from CrochetByRook website!">
+        
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+        <label for="message">Your Message (Optional)</label>
+        <textarea id="message" name="message" placeholder="Type your message here..." rows="4"></textarea>
+        
+        <label for="interest">Interested in...</label>
+        <select id="interest" name="interest" required>
+            <option value="">Select an option</option>
+            <option value="Custom Order">Custom Order</option>
+            <option value="Ready-made">Ready-made Item</option>
+            <option value="Shipping">Shipping Query</option>
+            <option value="Pricing">Pricing Question</option>
+            <option value="Other">Other</option>
+        </select>
+        
+        <button type="submit" class="form-submit-btn">
+            <i class="fas fa-paper-plane"></i> Send Enquiry
+        </button>
+    </form>
+</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3><i class="fas fa-yarn"></i> CrochetByRook</h3>
+                    <p>Handmade Woolen Treasures</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/yourphonenumber" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://facebook.com/yourusername" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://pinterest.com/yourusername" target="_blank"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#collections">Collections</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-products">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#products">Keychains</a></li>
+                        <li><a href="#products">Sweaters</a></li>
+                        <li><a href="#products">Scarves</a></li>
+                        <li><a href="#products">Beanies</a></li>
+                        <li><a href="#products">Custom Orders</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> crochetbyrook@gmail.com</li>
+                        <li><i class="fab fa-whatsapp"></i> +91 98765 43210</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Based in India</li>
+                        <li><i class="fas fa-shipping-fast"></i> All India Delivery</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 CrochetByRook. All handmade items are crafted with love.</p>
+                <p class="footer-note">Each piece is unique - slight variations may occur, adding to its handmade charm!</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Buy Now Modal -->
+    <div class="buy-modal" id="buyModal">
+        <div class="buy-modal-content">
+            <div class="buy-header">
+                <h3>Purchase via Social Media</h3>
+                <button class="close-buy-modal">&times;</button>
+            </div>
+            <div class="buy-body">
+                <p id="productDetails">You're about to purchase: <strong></strong></p>
+                <p>Price: <strong id="productPrice"></strong></p>
+                <p>Choose your preferred platform to complete the purchase:</p>
+                
+                <div class="platform-options">
+                    <a href="#" id="instagramBuy" class="platform-btn instagram-btn" target="_blank">
+                        <i class="fab fa-instagram"></i> Buy on Instagram
+                    </a>
+                    <a href="#" id="whatsappBuy" class="platform-btn whatsapp-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Buy on WhatsApp
+                    </a>
+                </div>
+                
+                <div class="buy-instructions">
+                    <h4><i class="fas fa-info-circle"></i> How to Order:</h4>
+                    <ol>
+                        <li>Click your preferred platform above</li>
+                        <li>Send us a message with the product name</li>
+                        <li>We'll confirm availability and details</li>
+                        <li>Make payment via UPI/Bank Transfer</li>
+                        <li>Receive your order in 3-5 days!</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
